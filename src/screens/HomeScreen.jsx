@@ -1,11 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
 import {
-    Image,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 const HomeScreen = () => {
@@ -13,7 +13,11 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.page}>
-      <View style={{ marginTop: 100 }}></View>
+      <Image
+          source={require("../assets/images/ladyy.jpg")}
+          style={{ height: 200, width: 200,borderRadius:100 }}
+        />
+      <View style={{ marginTop: 70 }}></View>
       <Text style={styles.Text}>Welcome Back!</Text>
 
       <View
@@ -49,10 +53,19 @@ const HomeScreen = () => {
           marginTop: 10,
         }}
       >
+        <Image
+          source={require("../assets/icons/eye.png")}
+          style={{ height: 20, width: 20 ,}}
+        />
+        <Image
+          source={require("../assets/icons/lock.png")}
+          style={{ height: 20, width: 20 }}
+        />
+        
         <TextInput
           placeholder="Enter Password"
           placeholderTextColor={"black"}
-          style={{ width: 350, height: 35 }}
+          style={{ width: 300, height: 35, }}
         />
       </View>
       <Text style={{ paddingLeft: 200, marginTop: 30, color: "blue" }}>
@@ -66,12 +79,12 @@ const HomeScreen = () => {
       </TouchableOpacity>
       <View style={{ flexDirection: "row" }}>
         <Image
-          source={require("../assets/icons/apple.jpg")}
+          source={require("../assets/icons/google.png")}
           style={{ height: 50, width: 50 }}
         />
         <Image
           source={require("../assets/icons/apple.jpg")}
-          style={{ height: 50, width: 50 }}
+          style={{ height: 50, width: 50,paddingLeft:15 }}
         />
       </View>
     </View>
